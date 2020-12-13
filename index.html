@@ -31,10 +31,10 @@
 
     </ul>
     <!-- HEADER -->
-        <div class="header">
-            <h1 id="name">Jennifer Farrington</h1>
-            <hr class="dividing-bar">
-        </div>
+    <div class="header">
+        <h1 id="name">Jennifer Farrington</h1>
+        <hr class="dividing-bar">
+    </div>
     <!-- ABOUT -->
     <div class="container-fluid about">
         <p class="lead">Junior Web Developer</p>
@@ -47,13 +47,18 @@
                     <div id="sm-circle-3"></div>
                 </div>
                 <div id="back-circle">
-                    <img class="headshot" src="https://media-exp1.licdn.com/dms/image/C4E03AQG0u7AWh8DjBw/profile-displayphoto-shrink_200_200/0?e=1611792000&v=beta&t=QtM3LaW7AM1y1yWrVWaWk793tod1DUqpVYJuoPstr5U" alt="Meet Jenn">
+                    <img class="headshot"
+                        src="https://media-exp1.licdn.com/dms/image/C4E03AQG0u7AWh8DjBw/profile-displayphoto-shrink_200_200/0?e=1611792000&v=beta&t=QtM3LaW7AM1y1yWrVWaWk793tod1DUqpVYJuoPstr5U"
+                        alt="Meet Jenn">
                 </div>
             </div>
             <div class="col-sm-1"></div>
             <div class="col-sm-5">
                 <h2>Meet Jenn</h2>
-                <p>Like most good stories, mine has quite a few twists and turns. After working in Media, Communications, and Marketing for the past five years, I'm currently seeking a full-time Web Development position. With my eye for design, knack for concise, clear communication, and affinity for problem-solving, I'm a well-rounded asset to any team.</p>
+                <p>Like most good stories, mine has quite a few twists and turns. After working in Media,
+                    Communications, and Marketing for the past five years, I'm currently seeking a full-time Web
+                    Development position. With my eye for design, knack for concise, clear communication, and affinity
+                    for problem-solving, I'm a well-rounded asset to any team.</p>
                 <button>Download Resume</button>
 
             </div>
@@ -62,82 +67,146 @@
     </div>
 
     <!-- WORK  -->
+
+    <div class="header-work">
+        <h2 id="work">Work</h1>
+    </div>
+    <hr class="dividing-bar">
     <div class="container-fluid">
-        <div class="header-work">
-            <h2 id="work">Work</h1>
-        </div>
-        <hr class="dividing-bar">
         <div class="row work">
+            <!-- Flip card 1 -->
             <div class="col-sm">
-                
-                <div class="card" style="width: 18rem;">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <img src="Assets/css-creature-screenshot.png" class="card-img-top" alt="...">
-                            <h5 class="card-title">CSS Creature</h5>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="Assets/banner Gen.png" alt="CSS Creature" class="card-img" style="height: 210px;">
+                            <p class="card-title">Banner Generator</p>
                         </div>
-                        <div class="card-back">
-                            <p class="card-text">This sleepy little sheepy was created entirely using HTML & CSS, and would really appreciate a good night's rest, thanks.</p>
-                            <a href="https://codepen.io/jlfarrington/pen/rNLoxqg" class="btn btn-primary">Take a look</a>
+                        <div class="flip-card-back">
+                            <h4>Banner Generator</h4>
+                            <p class="card-text">A simple application that uses the Lorem Picsum API and takes user
+                                input to generate a customized and randomized banner.</p>
+                            <a href="https://jlfarrington.github.io/api-project/" class="button" target="blank">Make my own banner!</a>
                         </div>
                     </div>
-                  </div>
-              </div>
-              <div class="col-sm">
-              <div class="card" style="width: 18rem;">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <img src="Assets/css-creature-screenshot.png" class="card-img-top" alt="...">
-                        <h5 class="card-title">NYT Article Search API</h5>
-                    </div>
-                    <div class="card-back">
-                        <p class="card-text">NYT Article Search API</h5>
-                            <p class="card-text">Browse by subject and date (optional) articles from the New York Times. Want to see articles about "elephant pajamas"? We have the technology.</p>
-                        <a href="https://codepen.io/jlfarrington/pen/rNLoxqg" class="btn btn-primary">Show me "elephant pajamas!"</a>
-                    </div>
-                </div>
-              </div>
-          </div>
-          <div class="col-sm">
-          <div class="card" style="width: 18rem;">
-            <div class="card-inner">
-                <div class="card-front">
-                    <img src="Assets/static-layout-screenshot.png" class="card-img-top" alt="...">
-                    <h5 class="card-title">Static Web Design</h5>
-                </div>
-                <div class="card-back">
-                    <p class="card-text">A replica of the Kast App website, displaying my working knowledge of HTML & CSS.</p>
-                    <a href="https://jlfarrington.github.io/static_layout/" class="btn btn-primary">Check it out!</a>
                 </div>
             </div>
-          </div>
-      </div>
-              
+            <!-- Flip card 2 -->
+            <div class="col-sm">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="Assets/css-creature-screenshot.png" alt="CSS Creature" class="card-img"
+                                style="height: 210px;">
+                            <p class="card-title">CSS Creature</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h4>CSS Creature</h4>
+                            <p class="card-text">This sleepy little sheepy was created entirely using HTML & CSS, and
+                                would really appreciate a good night's rest, thanks.</p>
+                            <a href="https://codepen.io/jlfarrington/pen/rNLoxqg" class="button" target="blank">Take a
+                                look</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Flip card 3 -->
+            <div class="col-sm">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="Assets/markus-spiske-jxc6RY5ASE8-unsplash.jpg" alt="NYT-API" class="card-img"
+                                style="height: 210px;">
+                            <p class="card-title">NYT Article Search</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h4>NYT Article API</h4>
+                            <p class="card-text">Browse by subject and date (optional) articles from the New York Times.
+                                Want to see articles about "heffalumps"? We have the technology.</p>
+                            <a href="https://jlfarrington.github.io/NYT-API/" class="button" target="blank">Show me "heffalumps"!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="row work">
+            <!-- Flip Card 4 -->
+            <div class="col-sm">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="Assets/static-layout-screenshot.png" alt="Static Layout" class="card-img"
+                                style="height: 210px;">
+                            <p class="card-title">Static Web Design</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h4>Static Web Design</h4>
+                            <p class="card-text">A replica of the Kast App website, displaying my working knowledge of
+                                HTML & CSS.</p>
+                            <a href="https://jlfarrington.github.io/static_layout/" class="button" target="blank">Check it out!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Flip Card 5 -->
+             <div class="col-sm">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://images.youracclaim.com/images/5b002c46-baae-4ec3-8d41-3c41eba94d54/Web_Dev_blue.png" alt="Static Layout" class="card-img"
+                                style="width: 200px; align-self: center;">
+                            <p class="card-title">Blue Badge TBA</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h4>Blue Badge TBA</h4>
+                            <p class="card-text">Soon there will be another project here, I just need to complete it first!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Flip Card 6 -->
+             <div class="col-sm">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://elevenfifty.org/wp-content/uploads/2020/03/badges-webdev_red.png" alt="Static Layout" class="card-img"
+                                style="width: 170px; align-self: center; padding-bottom: 15px; padding-top: 15px;">
+                            <p class="card-title">Red Badge TBA</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h4>Red Badge TBA</h4>
+                            <p class="card-text">Soon there will be another project here, I just need to complete it first!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-      <!-- CONNECT  -->
+    </div>
+    <!-- CONNECT  -->
     <div class="row connect">
         <div class="col-sm">
-        <form action="https://formspree.io/f/xayldnzo" method="POST" class="contact">
-            <label>
-                Your email:
-                <input type="text" name="_replyto">
-            </label>
-            <label>
-                Your message:
-                <textarea name="message"></textarea>
-            </label>
-       
-    <!-- your other form fields go here -->
+            <form action="https://formspree.io/f/xayldnzo" method="POST" class="contact">
+                <label>
+                    Your email:
+                    <input type="text" name="_replyto">
+                </label>
+                <label>
+                    Your message:
+                    <textarea name="message"></textarea>
+                </label>
 
-    <button type="submit">Send</button>
-    </form>
-</div>
-</div>
+                <!-- your other form fields go here -->
 
-  <!-- FOOTER  -->
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
 
-     
+    <!-- FOOTER  -->
+
+
     <!-- BOOTSTRAP SCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
