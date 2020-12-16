@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
     <link rel='stylesheet' href='styles.css'>
     <title>Portfolio</title>
 </head>
@@ -14,19 +18,13 @@
     <!-- NAVBAR -->
     <ul class="nav justify-content-center">
         <li class="nav-item">
-            <a class="nav-link active" href="#">Meet Jenn</a>
+            <a class="nav-link active" href="#about">Meet Jenn</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Work</a>
+            <a class="nav-link" href="#work">Work</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Connect</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Hire Jenn</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#connect">Connect</a>
         </li>
 
     </ul>
@@ -38,33 +36,40 @@
     <!-- ABOUT -->
     <div class="container-fluid about">
         <p class="lead">Junior Web Developer</p>
-        <div class="row about">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-4">
-                <div class="sm-circle">
-                    <div id="sm-circle-1"></div>
-                    <div id="sm-circle-2"></div>
-                    <div id="sm-circle-3"></div>
+        <div class="container">
+            <div class="row" id="about">
+                <div class="col" id="headshot-sec">
+                    <div class="headshot-circles">
+                        <div class="sm-circle">
+                            <div id="sm-circle-1"></div>
+                            <div id="sm-circle-2"></div>
+                            <div id="sm-circle-3"></div>
+                        </div>
+                        <div id="back-circle">
+                            <img class="headshot"
+                                src="https://media-exp1.licdn.com/dms/image/C4E03AQG0u7AWh8DjBw/profile-displayphoto-shrink_200_200/0?e=1611792000&v=beta&t=QtM3LaW7AM1y1yWrVWaWk793tod1DUqpVYJuoPstr5U"
+                                alt="Meet Jenn">
+                        </div>
+                    </div>
                 </div>
-                <div id="back-circle">
-                    <img class="headshot"
-                        src="https://media-exp1.licdn.com/dms/image/C4E03AQG0u7AWh8DjBw/profile-displayphoto-shrink_200_200/0?e=1611792000&v=beta&t=QtM3LaW7AM1y1yWrVWaWk793tod1DUqpVYJuoPstr5U"
-                        alt="Meet Jenn">
+                <div class="col" id="about-text">
+                    <div id="meet-jenn">
+                        <h2>Meet Jenn</h2>
+                        <p>Like most good stories, mine has quite a few twists and turns. After working in Media,
+                            Communications, and Marketing for the past five years, I'm currently seeking a full-time Web
+                            Development position. With my eye for design, knack for concise, clear communication, and
+                            affinity
+                            for problem-solving, I'm a well-rounded asset to any team.</p>
+                        <a class="button"
+                            href="http://www.jlfarrington.com/uploads/1/4/6/3/14631692/farrington5-3resume__1_.pdf">Download
+                            Resume</a>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-1"></div>
-            <div class="col-sm-5">
-                <h2>Meet Jenn</h2>
-                <p>Like most good stories, mine has quite a few twists and turns. After working in Media,
-                    Communications, and Marketing for the past five years, I'm currently seeking a full-time Web
-                    Development position. With my eye for design, knack for concise, clear communication, and affinity
-                    for problem-solving, I'm a well-rounded asset to any team.</p>
-                <button>Download Resume</button>
-
-            </div>
-            <div class="col-sm-1"></div>
         </div>
     </div>
+
+
 
     <!-- WORK  -->
 
@@ -73,7 +78,7 @@
     </div>
     <hr class="dividing-bar">
     <div class="container-fluid">
-        <div class="row work">
+        <div class="row work1">
             <!-- Flip card 1 -->
             <div class="col-sm">
                 <div class="flip-card">
@@ -86,7 +91,10 @@
                             <h4>Banner Generator</h4>
                             <p class="card-text">A simple application that uses the Lorem Picsum API and takes user
                                 input to generate a customized and randomized banner.</p>
-                            <a href="https://jlfarrington.github.io/api-project/" class="button" target="blank">Make my own banner!</a>
+                            <a href="https://jlfarrington.github.io/api-project/" class="button-card"
+                                target="blank">Make
+                                my
+                                own banner!</a>
                         </div>
                     </div>
                 </div>
@@ -102,9 +110,12 @@
                         </div>
                         <div class="flip-card-back">
                             <h4>CSS Creature</h4>
-                            <p class="card-text">This sleepy little sheepy was created entirely using HTML & CSS, and
+                            <p class="card-text">This sleepy little sheepy was created entirely using HTML & CSS,
+                                and
                                 would really appreciate a good night's rest, thanks.</p>
-                            <a href="https://codepen.io/jlfarrington/pen/rNLoxqg" class="button" target="blank">Take a
+                            <a href="https://codepen.io/jlfarrington/pen/rNLoxqg" class="button-card"
+                                target="blank">Take
+                                a
                                 look</a>
                         </div>
                     </div>
@@ -121,15 +132,17 @@
                         </div>
                         <div class="flip-card-back">
                             <h4>NYT Article API</h4>
-                            <p class="card-text">Browse by subject and date (optional) articles from the New York Times.
+                            <p class="card-text">Browse by subject and date (optional) articles from the New York
+                                Times.
                                 Want to see articles about "heffalumps"? We have the technology.</p>
-                            <a href="https://jlfarrington.github.io/NYT-API/" class="button" target="blank">Show me "heffalumps"!</a>
+                            <a href="https://jlfarrington.github.io/NYT-API/" class="button-card" target="blank">Show me
+                                "heffalumps"!</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row work">
+        <div class="row work2">
             <!-- Flip Card 4 -->
             <div class="col-sm">
                 <div class="flip-card">
@@ -141,41 +154,47 @@
                         </div>
                         <div class="flip-card-back">
                             <h4>Static Web Design</h4>
-                            <p class="card-text">A replica of the Kast App website, displaying my working knowledge of
+                            <p class="card-text">A replica of the Kast App website, displaying my working knowledge
+                                of
                                 HTML & CSS.</p>
-                            <a href="https://jlfarrington.github.io/static_layout/" class="button" target="blank">Check it out!</a>
+                            <a href="https://jlfarrington.github.io/static_layout/" class="button-card"
+                                target="blank">Check
+                                it out!</a>
                         </div>
                     </div>
                 </div>
             </div>
-             <!-- Flip Card 5 -->
-             <div class="col-sm">
+            <!-- Flip Card 5 -->
+            <div class="col-sm">
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="https://images.youracclaim.com/images/5b002c46-baae-4ec3-8d41-3c41eba94d54/Web_Dev_blue.png" alt="Static Layout" class="card-img"
-                                style="width: 200px; align-self: center;">
+                            <img src="https://images.youracclaim.com/images/5b002c46-baae-4ec3-8d41-3c41eba94d54/Web_Dev_blue.png"
+                                alt="Static Layout" class="card-img" style="width: 200px; align-self: center;">
                             <p class="card-title">Blue Badge TBA</p>
                         </div>
                         <div class="flip-card-back">
                             <h4>Blue Badge TBA</h4>
-                            <p class="card-text">Soon there will be another project here, I just need to complete it first!</p>
+                            <p class="card-text">Soon there will be another project here, I just need to complete it
+                                first!</p>
                         </div>
                     </div>
                 </div>
             </div>
-             <!-- Flip Card 6 -->
-             <div class="col-sm">
+            <!-- Flip Card 6 -->
+            <div class="col-sm">
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="https://elevenfifty.org/wp-content/uploads/2020/03/badges-webdev_red.png" alt="Static Layout" class="card-img"
+                            <img src="https://elevenfifty.org/wp-content/uploads/2020/03/badges-webdev_red.png"
+                                alt="Static Layout" class="card-img"
                                 style="width: 170px; align-self: center; padding-bottom: 15px; padding-top: 15px;">
                             <p class="card-title">Red Badge TBA</p>
                         </div>
                         <div class="flip-card-back">
                             <h4>Red Badge TBA</h4>
-                            <p class="card-text">Soon there will be another project here, I just need to complete it first!</p>
+                            <p class="card-text">Soon there will be another project here, I just need to complete it
+                                first!</p>
                         </div>
                     </div>
                 </div>
@@ -185,28 +204,53 @@
     </div>
     </div>
     <!-- CONNECT  -->
+    <div class="header-connect">
+        <h2 id="connect">Connect</h1>
+            <hr class="dividing-bar">
+    </div>
+    <div class="container">
     <div class="row connect">
-        <div class="col-sm">
-            <form action="https://formspree.io/f/xayldnzo" method="POST" class="contact">
-                <label>
-                    Your email:
-                    <input type="text" name="_replyto">
-                </label>
-                <label>
-                    Your message:
-                    <textarea name="message"></textarea>
-                </label>
-
-                <!-- your other form fields go here -->
-
-                <button type="submit">Send</button>
+        <div class="col-sm connect-form">
+            <form action="https://formspree.io/f/xayldnzo" method="POST" class="form-style-6">
+                <input type="text" name="sender" placeholder="Your Name">
+                <input type="email" name="_replyto" placeholder="Email Address">
+                <input type="text" name="organization" placeholder="Your Organization">
+                <textarea name="message" placeholder="Send a note to Jenn"></textarea>
+                <input type="submit" value="Send" />
             </form>
         </div>
+        <div class="col-sm social">
+            <h2>Let's start a conversation.</h2>
+            <div class="social-icons">
+            <a href="https://www.linkedin.com/in/jlfarrington/" target="blank"><img src="Assets/linkedin-transparent-white-6.png" class="icon"></a>
+            <a href="https://github.com/jlfarrington"><img src="Assets/github-white.png" class="icon" style="opacity: 78%;"></a>
+        </div>
+        </div>
+    </div>
     </div>
 
-    <!-- FOOTER  -->
-
-
+    <!-- FOOTER -->
+    <div class="footer">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">Jennifer Farrington</a>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#work">Work</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#connect">Connect</a>
+                </li>
+              </ul>
+              <span class="navbar-text">
+                &#9400 Copyright 2020 Jennifer Farrington
+              </span>
+            </div>
+          </nav>
+    </div>
     <!-- BOOTSTRAP SCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
