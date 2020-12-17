@@ -427,3 +427,13 @@ a.button-card:hover {
 .footer {
     margin-top: 100px;
 }
+
+/* .navbar-light, .navbar-text, .navbar-nav, .mr-auto, .collapse, .navbar-collapse, .navbar-expand-lg, .navbar-brand, #navbarText, .navbar,  */
+
+.nav-link, .navbar-brand, .navbar-text {
+    color: white!important;
+}
+
+.nav-link:hover {
+    color:#333D53!important;
+}
